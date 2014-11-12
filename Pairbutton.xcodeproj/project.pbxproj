@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		363C4AE71A1382EA005D2DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AE61A1382EA005D2DAB /* AppDelegate.swift */; };
+		363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AE81A1382EA005D2DAB /* ViewController.swift */; };
+		363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEA1A1382EA005D2DAB /* Images.xcassets */; };
+		363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEC1A1382EA005D2DAB /* Main.storyboard */; };
+		363C4AFA1A1382EA005D2DAB /* PairbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		363C4AF41A1382EA005D2DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 363C4AD91A1382EA005D2DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 363C4AE01A1382EA005D2DAB;
+			remoteInfo = Pairbutton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		363C4AE11A1382EA005D2DAB /* Pairbutton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pairbutton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		363C4AE51A1382EA005D2DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363C4AE61A1382EA005D2DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		363C4AE81A1382EA005D2DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		363C4AEA1A1382EA005D2DAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		363C4AED1A1382EA005D2DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PairbuttonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		363C4AF81A1382EA005D2DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairbuttonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		363C4ADE1A1382EA005D2DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363C4AF01A1382EA005D2DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		363C4AD81A1382EA005D2DAB = {
+			isa = PBXGroup;
+			children = (
+				363C4AE31A1382EA005D2DAB /* Pairbutton */,
+				363C4AF61A1382EA005D2DAB /* PairbuttonTests */,
+				363C4AE21A1382EA005D2DAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		363C4AE21A1382EA005D2DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AE11A1382EA005D2DAB /* Pairbutton.app */,
+				363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		363C4AE31A1382EA005D2DAB /* Pairbutton */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AE61A1382EA005D2DAB /* AppDelegate.swift */,
+				363C4AE81A1382EA005D2DAB /* ViewController.swift */,
+				363C4AEA1A1382EA005D2DAB /* Images.xcassets */,
+				363C4AEC1A1382EA005D2DAB /* Main.storyboard */,
+				363C4AE41A1382EA005D2DAB /* Supporting Files */,
+			);
+			path = Pairbutton;
+			sourceTree = "<group>";
+		};
+		363C4AE41A1382EA005D2DAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AE51A1382EA005D2DAB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		363C4AF61A1382EA005D2DAB /* PairbuttonTests */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */,
+				363C4AF71A1382EA005D2DAB /* Supporting Files */,
+			);
+			path = PairbuttonTests;
+			sourceTree = "<group>";
+		};
+		363C4AF71A1382EA005D2DAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AF81A1382EA005D2DAB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		363C4AE01A1382EA005D2DAB /* Pairbutton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363C4AFD1A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "Pairbutton" */;
+			buildPhases = (
+				363C4ADD1A1382EA005D2DAB /* Sources */,
+				363C4ADE1A1382EA005D2DAB /* Frameworks */,
+				363C4ADF1A1382EA005D2DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pairbutton;
+			productName = Pairbutton;
+			productReference = 363C4AE11A1382EA005D2DAB /* Pairbutton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		363C4AF21A1382EA005D2DAB /* PairbuttonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 363C4B001A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "PairbuttonTests" */;
+			buildPhases = (
+				363C4AEF1A1382EA005D2DAB /* Sources */,
+				363C4AF01A1382EA005D2DAB /* Frameworks */,
+				363C4AF11A1382EA005D2DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				363C4AF51A1382EA005D2DAB /* PBXTargetDependency */,
+			);
+			name = PairbuttonTests;
+			productName = PairbuttonTests;
+			productReference = 363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		363C4AD91A1382EA005D2DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Kestrel Development";
+				TargetAttributes = {
+					363C4AE01A1382EA005D2DAB = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					363C4AF21A1382EA005D2DAB = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 363C4AE01A1382EA005D2DAB;
+					};
+				};
+			};
+			buildConfigurationList = 363C4ADC1A1382EA005D2DAB /* Build configuration list for PBXProject "Pairbutton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 363C4AD81A1382EA005D2DAB;
+			productRefGroup = 363C4AE21A1382EA005D2DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				363C4AE01A1382EA005D2DAB /* Pairbutton */,
+				363C4AF21A1382EA005D2DAB /* PairbuttonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		363C4ADF1A1382EA005D2DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */,
+				363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363C4AF11A1382EA005D2DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363C4ADD1A1382EA005D2DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */,
+				363C4AE71A1382EA005D2DAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		363C4AEF1A1382EA005D2DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				363C4AFA1A1382EA005D2DAB /* PairbuttonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		363C4AF51A1382EA005D2DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 363C4AE01A1382EA005D2DAB /* Pairbutton */;
+			targetProxy = 363C4AF41A1382EA005D2DAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		363C4AEC1A1382EA005D2DAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				363C4AED1A1382EA005D2DAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		363C4AFB1A1382EA005D2DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		363C4AFC1A1382EA005D2DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		363C4AFE1A1382EA005D2DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Pairbutton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		363C4AFF1A1382EA005D2DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Pairbutton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		363C4B011A1382EA005D2DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PairbuttonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pairbutton.app/Contents/MacOS/Pairbutton";
+			};
+			name = Debug;
+		};
+		363C4B021A1382EA005D2DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PairbuttonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pairbutton.app/Contents/MacOS/Pairbutton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		363C4ADC1A1382EA005D2DAB /* Build configuration list for PBXProject "Pairbutton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363C4AFB1A1382EA005D2DAB /* Debug */,
+				363C4AFC1A1382EA005D2DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		363C4AFD1A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "Pairbutton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363C4AFE1A1382EA005D2DAB /* Debug */,
+				363C4AFF1A1382EA005D2DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		363C4B001A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "PairbuttonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				363C4B011A1382EA005D2DAB /* Debug */,
+				363C4B021A1382EA005D2DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 363C4AD91A1382EA005D2DAB /* Project object */;
+}
