@@ -12,6 +12,7 @@
 		363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEA1A1382EA005D2DAB /* Images.xcassets */; };
 		363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEC1A1382EA005D2DAB /* Main.storyboard */; };
 		363C4AFA1A1382EA005D2DAB /* PairbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */; };
+		36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFD17F1A14840C00B8C40C /* WatchedFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PairbuttonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		363C4AF81A1382EA005D2DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairbuttonTests.swift; sourceTree = "<group>"; };
+		36DFD17F1A14840C00B8C40C /* WatchedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				363C4AE61A1382EA005D2DAB /* AppDelegate.swift */,
 				363C4AE81A1382EA005D2DAB /* ViewController.swift */,
+				36DFD17F1A14840C00B8C40C /* WatchedFile.swift */,
 				363C4AEA1A1382EA005D2DAB /* Images.xcassets */,
 				363C4AEC1A1382EA005D2DAB /* Main.storyboard */,
 				363C4AE41A1382EA005D2DAB /* Supporting Files */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */,
 				363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */,
 				363C4AE71A1382EA005D2DAB /* AppDelegate.swift in Sources */,
 			);
@@ -397,6 +401,7 @@
 				363C4AFF1A1382EA005D2DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		363C4B001A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "PairbuttonTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +410,7 @@
 				363C4B021A1382EA005D2DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

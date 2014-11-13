@@ -27,12 +27,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
 
         // Do any additional setup after loading the view.
     }
-
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
     
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
         return mySampleFiles.count
@@ -50,6 +44,22 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     }
 
     @IBAction func addFile(sender: AnyObject) {
+        let openDialog = NSOpenPanel()
+        openDialog.canChooseFiles = true
+        openDialog.canChooseDirectories = false
+        openDialog.canCreateDirectories = false
+        openDialog.allowsMultipleSelection = true
+        let window = self.view.window!
+        openDialog.beginSheetModalForWindow(window) { clicked in
+            if clicked == NSFileHandlingPanelOKButton {
+                for url in openDialog.URLs {
+                    if let u = url as? NSURL {
+                        let file = WatchedFile(fileUrl: u)
+                        println("\(file.fileName), \(file.fileDir)")
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func removeFile(sender: AnyObject) {
