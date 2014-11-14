@@ -12,6 +12,7 @@
 		363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEA1A1382EA005D2DAB /* Images.xcassets */; };
 		363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEC1A1382EA005D2DAB /* Main.storyboard */; };
 		363C4AFA1A1382EA005D2DAB /* PairbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */; };
+		36C159EF1A15EA5E00A8BA60 /* watch_file.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C159EE1A15EA5E00A8BA60 /* watch_file.py */; };
 		36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFD17F1A14840C00B8C40C /* WatchedFile.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,8 @@
 		363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PairbuttonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		363C4AF81A1382EA005D2DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairbuttonTests.swift; sourceTree = "<group>"; };
+		36C159EA1A15E95D00A8BA60 /* Pairbutton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pairbutton-Bridging-Header.h"; sourceTree = "<group>"; };
+		36C159EE1A15EA5E00A8BA60 /* watch_file.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = watch_file.py; sourceTree = "<group>"; };
 		36DFD17F1A14840C00B8C40C /* WatchedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,11 +80,11 @@
 		363C4AE31A1382EA005D2DAB /* Pairbutton */ = {
 			isa = PBXGroup;
 			children = (
+				363C4AEC1A1382EA005D2DAB /* Main.storyboard */,
 				363C4AE61A1382EA005D2DAB /* AppDelegate.swift */,
 				363C4AE81A1382EA005D2DAB /* ViewController.swift */,
 				36DFD17F1A14840C00B8C40C /* WatchedFile.swift */,
 				363C4AEA1A1382EA005D2DAB /* Images.xcassets */,
-				363C4AEC1A1382EA005D2DAB /* Main.storyboard */,
 				363C4AE41A1382EA005D2DAB /* Supporting Files */,
 			);
 			path = Pairbutton;
@@ -90,7 +93,9 @@
 		363C4AE41A1382EA005D2DAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				36C159EA1A15E95D00A8BA60 /* Pairbutton-Bridging-Header.h */,
 				363C4AE51A1382EA005D2DAB /* Info.plist */,
+				36C159EE1A15EA5E00A8BA60 /* watch_file.py */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			files = (
 				363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */,
 				363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */,
+				36C159EF1A15EA5E00A8BA60 /* watch_file.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,10 +334,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Pairbutton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pairbutton/Pairbutton-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -339,10 +348,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Pairbutton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pairbutton/Pairbutton-Bridging-Header.h";
 			};
 			name = Release;
 		};
