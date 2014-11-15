@@ -11,12 +11,18 @@ import Cocoa
 class WatchedFile: NSObject, VDKQueueDelegate {
     
     var fileUrl: NSURL
+    var lastContents: NSString
     var onFirstRead: ((initialData: NSData) -> ())?
     var onDelta: ((delta: NSData) -> ())?
     var vq: VDKQueue
 
     init(fileUrl: NSURL, onFirstRead: ((initialData: NSData) -> ())?, onDelta: ((delta: NSData) -> ())? ) {
         self.fileUrl = fileUrl
+        var error: NSError?
+        self.lastContents = String(contentsOfURL: fileUrl, encoding: NSUTF8StringEncoding, error: &error)!
+        if (error != nil) {
+            println(error)
+        }
         self.onFirstRead = onFirstRead
         self.onDelta = onDelta
         self.vq = VDKQueue()
@@ -26,10 +32,22 @@ class WatchedFile: NSObject, VDKQueueDelegate {
     }
     
     func queue(queue: VDKQueue!, didReceiveNotification notificationName: String!, forPath fpath: String!) {
-        println(fpath, notificationName)
         if notificationName == "VDKQueueFileDeletedNotification" {
             vq.removeAllPaths()
             vq.addPath(fileUrl.path!)
+        } else if notificationName == "VDKQueueFileAttributesChangedNotification" {
+            var error: NSError?
+            if let newContents = String(contentsOfURL: fileUrl, encoding: NSUTF8StringEncoding, error: &error) {
+                if self.lastContents == newContents {
+                    return
+                }
+                let dmp = DiffMatchPatch()
+                let patches = dmp.patch_makeFromOldString(self.lastContents, andNewString: newContents)
+                println(dmp.patch_toText(patches))
+                self.lastContents = newContents
+            } else {
+                println(error)
+            }
         }
     }
     
