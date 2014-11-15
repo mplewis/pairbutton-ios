@@ -8,32 +8,29 @@
 
 import Cocoa
 
-class WatchedFile: NSObject {
+class WatchedFile: NSObject, VDKQueueDelegate {
     
     var fileUrl: NSURL
+    var onFirstRead: ((initialData: NSData) -> ())?
     var onDelta: ((delta: NSData) -> ())?
+    var vq: VDKQueue
 
     init(fileUrl: NSURL, onFirstRead: ((initialData: NSData) -> ())?, onDelta: ((delta: NSData) -> ())? ) {
         self.fileUrl = fileUrl
-        let task = NSTask()
-        let stdOut = NSPipe()
-        task.launchPath = "/usr/bin/python"
-        let scriptPath = NSBundle.mainBundle().pathForResource("watch_file", ofType: "py")!
-        task.arguments = [scriptPath, "alpha", "bravo", "charlie"]
-        let handler: (NSFileHandle!) -> Void = { handle in
-            let data = handle.availableData
-            let dataStr = NSString(data: data, encoding: NSUTF8StringEncoding)!
-            println("---");
-            println(dataStr);
+        self.onFirstRead = onFirstRead
+        self.onDelta = onDelta
+        self.vq = VDKQueue()
+        super.init()
+        vq.addPath(fileUrl.path!)
+        vq.delegate = self
+    }
+    
+    func queue(queue: VDKQueue!, didReceiveNotification notificationName: String!, forPath fpath: String!) {
+        println(fpath, notificationName)
+        if notificationName == "VDKQueueFileDeletedNotification" {
+            vq.removeAllPaths()
+            vq.addPath(fileUrl.path!)
         }
-        stdOut.fileHandleForReading.readabilityHandler = handler
-        let onExit: (NSTask!) -> Void = { task in
-            task.standardOutput.fileHandleForReading.readabilityHandler = nil
-        }
-        task.terminationHandler = onExit
-        task.standardInput = NSPipe()
-        task.standardOutput = stdOut
-        task.launch()
     }
     
     func fileName() -> NSString {

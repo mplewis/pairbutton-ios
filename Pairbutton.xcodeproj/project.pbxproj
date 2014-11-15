@@ -11,20 +11,63 @@
 		363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AE81A1382EA005D2DAB /* ViewController.swift */; };
 		363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEA1A1382EA005D2DAB /* Images.xcassets */; };
 		363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEC1A1382EA005D2DAB /* Main.storyboard */; };
-		363C4AFA1A1382EA005D2DAB /* PairbuttonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */; };
+		36BFD9791A175EAE00D6BDD5 /* DiffMatchPatch.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 36BFD9711A175E6700D6BDD5 /* DiffMatchPatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		36BFD9821A176BD700D6BDD5 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BFD9801A176BD700D6BDD5 /* VDKQueue.m */; };
 		36C159EF1A15EA5E00A8BA60 /* watch_file.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C159EE1A15EA5E00A8BA60 /* watch_file.py */; };
 		36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFD17F1A14840C00B8C40C /* WatchedFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		363C4AF41A1382EA005D2DAB /* PBXContainerItemProxy */ = {
+		36BFD9701A175E6700D6BDD5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 363C4AD91A1382EA005D2DAB /* Project object */;
+			containerPortal = 36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = DiffMatchPatch;
+		};
+		36BFD9721A175E6700D6BDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D5BC0AF128CA8E200B8F5FF;
+			remoteInfo = DiffMatchPatchTest;
+		};
+		36BFD9741A175E6700D6BDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D96F3A212AFC68900C3E5C0;
+			remoteInfo = speedtest;
+		};
+		36BFD9761A175E6700D6BDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D03488E135F75460051FE16;
+			remoteInfo = "mode-test";
+		};
+		36BFD97A1A175EBA00D6BDD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 363C4AE01A1382EA005D2DAB;
-			remoteInfo = Pairbutton;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = DiffMatchPatch;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		36BFD9781A175E9E00D6BDD5 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36BFD9791A175EAE00D6BDD5 /* DiffMatchPatch.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		363C4AE11A1382EA005D2DAB /* Pairbutton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pairbutton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,9 +76,9 @@
 		363C4AE81A1382EA005D2DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		363C4AEA1A1382EA005D2DAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		363C4AED1A1382EA005D2DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PairbuttonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		363C4AF81A1382EA005D2DAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairbuttonTests.swift; sourceTree = "<group>"; };
+		36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DiffMatchPatch.xcodeproj; path = "diff-match-patch/DiffMatchPatch.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		36BFD9801A176BD700D6BDD5 /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKQueue.m; sourceTree = "<group>"; };
+		36BFD9811A176BD700D6BDD5 /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
 		36C159EA1A15E95D00A8BA60 /* Pairbutton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pairbutton-Bridging-Header.h"; sourceTree = "<group>"; };
 		36C159EE1A15EA5E00A8BA60 /* watch_file.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = watch_file.py; sourceTree = "<group>"; };
 		36DFD17F1A14840C00B8C40C /* WatchedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedFile.swift; sourceTree = "<group>"; };
@@ -49,13 +92,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		363C4AF01A1382EA005D2DAB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				363C4AE31A1382EA005D2DAB /* Pairbutton */,
-				363C4AF61A1382EA005D2DAB /* PairbuttonTests */,
+				3677014E1A171C6300773DA9 /* Vendor */,
 				363C4AE21A1382EA005D2DAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				363C4AE11A1382EA005D2DAB /* Pairbutton.app */,
-				363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,21 +135,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		363C4AF61A1382EA005D2DAB /* PairbuttonTests */ = {
+		3677014E1A171C6300773DA9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				363C4AF91A1382EA005D2DAB /* PairbuttonTests.swift */,
-				363C4AF71A1382EA005D2DAB /* Supporting Files */,
+				36BFD97C1A1769AC00D6BDD5 /* VDKQueue */,
+				36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */,
 			);
-			path = PairbuttonTests;
+			name = Vendor;
+			path = Pairbutton;
 			sourceTree = "<group>";
 		};
-		363C4AF71A1382EA005D2DAB /* Supporting Files */ = {
+		36BFD96A1A175E6700D6BDD5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				363C4AF81A1382EA005D2DAB /* Info.plist */,
+				36BFD9711A175E6700D6BDD5 /* DiffMatchPatch.framework */,
+				36BFD9731A175E6700D6BDD5 /* DiffMatchPatchTest.octest */,
+				36BFD9751A175E6700D6BDD5 /* speedtest */,
+				36BFD9771A175E6700D6BDD5 /* mode-test */,
 			);
-			name = "Supporting Files";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36BFD97C1A1769AC00D6BDD5 /* VDKQueue */ = {
+			isa = PBXGroup;
+			children = (
+				36BFD9801A176BD700D6BDD5 /* VDKQueue.m */,
+				36BFD9811A176BD700D6BDD5 /* VDKQueue.h */,
+			);
+			name = VDKQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,33 +175,17 @@
 				363C4ADD1A1382EA005D2DAB /* Sources */,
 				363C4ADE1A1382EA005D2DAB /* Frameworks */,
 				363C4ADF1A1382EA005D2DAB /* Resources */,
+				36BFD9781A175E9E00D6BDD5 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				36BFD97B1A175EBA00D6BDD5 /* PBXTargetDependency */,
 			);
 			name = Pairbutton;
 			productName = Pairbutton;
 			productReference = 363C4AE11A1382EA005D2DAB /* Pairbutton.app */;
 			productType = "com.apple.product-type.application";
-		};
-		363C4AF21A1382EA005D2DAB /* PairbuttonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 363C4B001A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "PairbuttonTests" */;
-			buildPhases = (
-				363C4AEF1A1382EA005D2DAB /* Sources */,
-				363C4AF01A1382EA005D2DAB /* Frameworks */,
-				363C4AF11A1382EA005D2DAB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				363C4AF51A1382EA005D2DAB /* PBXTargetDependency */,
-			);
-			name = PairbuttonTests;
-			productName = PairbuttonTests;
-			productReference = 363C4AF31A1382EA005D2DAB /* PairbuttonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -167,10 +199,6 @@
 					363C4AE01A1382EA005D2DAB = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					363C4AF21A1382EA005D2DAB = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 363C4AE01A1382EA005D2DAB;
-					};
 				};
 			};
 			buildConfigurationList = 363C4ADC1A1382EA005D2DAB /* Build configuration list for PBXProject "Pairbutton" */;
@@ -180,17 +208,54 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = 363C4AD81A1382EA005D2DAB;
 			productRefGroup = 363C4AE21A1382EA005D2DAB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 36BFD96A1A175E6700D6BDD5 /* Products */;
+					ProjectRef = 36BFD9691A175E6700D6BDD5 /* DiffMatchPatch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				363C4AE01A1382EA005D2DAB /* Pairbutton */,
-				363C4AF21A1382EA005D2DAB /* PairbuttonTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		36BFD9711A175E6700D6BDD5 /* DiffMatchPatch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DiffMatchPatch.framework;
+			remoteRef = 36BFD9701A175E6700D6BDD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		36BFD9731A175E6700D6BDD5 /* DiffMatchPatchTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DiffMatchPatchTest.octest;
+			remoteRef = 36BFD9721A175E6700D6BDD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		36BFD9751A175E6700D6BDD5 /* speedtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = speedtest;
+			remoteRef = 36BFD9741A175E6700D6BDD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		36BFD9771A175E6700D6BDD5 /* mode-test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "mode-test";
+			remoteRef = 36BFD9761A175E6700D6BDD5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		363C4ADF1A1382EA005D2DAB /* Resources */ = {
@@ -200,13 +265,6 @@
 				363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */,
 				363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */,
 				36C159EF1A15EA5E00A8BA60 /* watch_file.py in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		363C4AF11A1382EA005D2DAB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,24 +278,17 @@
 				36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */,
 				363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */,
 				363C4AE71A1382EA005D2DAB /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		363C4AEF1A1382EA005D2DAB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				363C4AFA1A1382EA005D2DAB /* PairbuttonTests.swift in Sources */,
+				36BFD9821A176BD700D6BDD5 /* VDKQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		363C4AF51A1382EA005D2DAB /* PBXTargetDependency */ = {
+		36BFD97B1A175EBA00D6BDD5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 363C4AE01A1382EA005D2DAB /* Pairbutton */;
-			targetProxy = 363C4AF41A1382EA005D2DAB /* PBXContainerItemProxy */;
+			name = DiffMatchPatch;
+			targetProxy = 36BFD97A1A175EBA00D6BDD5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,42 +408,6 @@
 			};
 			name = Release;
 		};
-		363C4B011A1382EA005D2DAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PairbuttonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pairbutton.app/Contents/MacOS/Pairbutton";
-			};
-			name = Debug;
-		};
-		363C4B021A1382EA005D2DAB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PairbuttonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pairbutton.app/Contents/MacOS/Pairbutton";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,15 +425,6 @@
 			buildConfigurations = (
 				363C4AFE1A1382EA005D2DAB /* Debug */,
 				363C4AFF1A1382EA005D2DAB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		363C4B001A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "PairbuttonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				363C4B011A1382EA005D2DAB /* Debug */,
-				363C4B021A1382EA005D2DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
