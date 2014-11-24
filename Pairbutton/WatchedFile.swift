@@ -12,11 +12,11 @@ class WatchedFile: NSObject, VDKQueueDelegate {
     
     var fileUrl: NSURL
     var lastContents: NSString
-    var onFirstRead: ((initialData: NSData) -> ())?
-    var onDelta: ((delta: NSData) -> ())?
+    var onFirstRead: ((initialData: String) -> ())?
+    var onDelta: ((delta: String) -> ())?
     var vq: VDKQueue
 
-    init(fileUrl: NSURL, onFirstRead: ((initialData: NSData) -> ())?, onDelta: ((delta: NSData) -> ())? ) {
+    init(fileUrl: NSURL, onFirstRead: ((initialData: String) -> ())?, onDelta: ((delta: String) -> ())? ) {
         self.fileUrl = fileUrl
         var error: NSError?
         self.lastContents = String(contentsOfURL: fileUrl, encoding: NSUTF8StringEncoding, error: &error)!
@@ -27,6 +27,7 @@ class WatchedFile: NSObject, VDKQueueDelegate {
         self.onDelta = onDelta
         self.vq = VDKQueue()
         super.init()
+        self.onFirstRead?(initialData: self.lastContents)
         vq.addPath(fileUrl.path!)
         vq.delegate = self
     }
@@ -43,7 +44,8 @@ class WatchedFile: NSObject, VDKQueueDelegate {
                 }
                 let dmp = DiffMatchPatch()
                 let patches = dmp.patch_makeFromOldString(self.lastContents, andNewString: newContents)
-                println(dmp.patch_toText(patches))
+                let patchesString = dmp.patch_toText(patches)
+                self.onDelta?(delta: patchesString)
                 self.lastContents = newContents
             } else {
                 println(error)

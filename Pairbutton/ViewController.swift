@@ -50,7 +50,11 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             if clicked == NSFileHandlingPanelOKButton {
                 for url in openDialog.URLs {
                     if let u = url as? NSURL {
-                        let file = WatchedFile(fileUrl: u, onFirstRead: nil, onDelta: nil)
+                        let file = WatchedFile(fileUrl: u, onFirstRead: { (initialData) -> () in
+                            println(initialData)
+                        }, onDelta: { (delta) -> () in
+                            println(delta)
+                        })
                         self.watchedFiles.append(file)
                         self.tableView.reloadData()
                     }
