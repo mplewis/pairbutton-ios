@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06F27E4FA53C525F847E4543 /* NSString+EscapeHTMLCharacters.h in Headers */ = {isa = PBXBuildFile; fileRef = 831EC780958A96D97B265E59 /* NSString+EscapeHTMLCharacters.h */; };
+		13070E935D0450E89F1C159C /* NSString+EscapeHTMLCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FEC43452EAFFD5E1DB41AC /* NSString+EscapeHTMLCharacters.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		1E29DFD2BEA9179BF156AA71 /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = C891FF9546E7C35AC12C46DD /* NSString+UriCompatibility.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		231704A0098C8245DF366D1B /* NSString+UriCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 728663CEA24C383AC4CE3727 /* NSString+UriCompatibility.h */; };
+		5381B7318D4F2207217D1F0B /* Pods-Pairbutton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B28C6088915BB56888B0A23 /* Pods-Pairbutton-dummy.m */; };
+		62AD26251BA6D98972DAB56C /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EC74125BB710F22728AF6F /* DiffMatchPatch.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		69F85382457921CDA3CCDD40 /* DMPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1D2C28314067CCA016EFC1 /* DMPatch.h */; };
+		6DB42B7BB51F2D6E6F533DC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CF53F862C54E40A4B98E44 /* Cocoa.framework */; };
+		756094F2635A641486522309 /* DiffMatchPatchInternals.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ED0B21D8E7315DD49D07C7E /* DiffMatchPatchInternals.h */; };
+		76863EFED2E3057BBA9A28FD /* DMDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B429D59B968C9885FFE226E /* DMDiff.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		79414421DF3A7CE8371CD686 /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E52AB55779A8D6621BB6B6B1 /* DiffMatchPatch.h */; };
+		8A6F2110A335FE1B449EB55A /* DMPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F446D86E0A033B56CAC363DF /* DMPatch.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		902E05325192E5069A1926C5 /* DiffMatchPatchCFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFFEFBB15168EB8540F2981 /* DiffMatchPatchCFUtilities.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9BAE45E614750B9B757A562D /* DiffMatchPatchCFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C62681549F94AB6B30A8AF25 /* DiffMatchPatchCFUtilities.h */; };
+		B5502AF10754DB31737CE0CB /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D27E6E5F9FB3869EF89792B /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */; };
+		B7DC5CDE70A9563798E30E53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CF53F862C54E40A4B98E44 /* Cocoa.framework */; };
+		E6CB43346B0BB40F36D2A035 /* DMDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 259151628BFDF61BDA52440E /* DMDiff.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C700A4411EC21C0C995FA202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C91D661C60DAA86A0124BAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C18CAF2F1C3E2E5640E4FD99;
+			remoteInfo = "Pods-Pairbutton-DiffMatchPatch-ObjC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ED0B21D8E7315DD49D07C7E /* DiffMatchPatchInternals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatchInternals.h; path = Source/DiffMatchPatchInternals.h; sourceTree = "<group>"; };
+		259151628BFDF61BDA52440E /* DMDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMDiff.h; path = Source/DMDiff.h; sourceTree = "<group>"; };
+		2A6A3A7F1B0FA9F1FDE7E124 /* Pods-Pairbutton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton.release.xcconfig"; sourceTree = "<group>"; };
+		2B28C6088915BB56888B0A23 /* Pods-Pairbutton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pairbutton-dummy.m"; sourceTree = "<group>"; };
+		2B429D59B968C9885FFE226E /* DMDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DMDiff.m; path = Source/DMDiff.m; sourceTree = "<group>"; };
+		2D27E6E5F9FB3869EF89792B /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m"; sourceTree = "<group>"; };
+		3F02F72B1CFA62128BB43E96 /* Pods-Pairbutton-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pairbutton-resources.sh"; sourceTree = "<group>"; };
+		50EC74125BB710F22728AF6F /* DiffMatchPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiffMatchPatch.m; path = Source/DiffMatchPatch.m; sourceTree = "<group>"; };
+		5CFFEFBB15168EB8540F2981 /* DiffMatchPatchCFUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiffMatchPatchCFUtilities.m; path = Source/DiffMatchPatchCFUtilities.m; sourceTree = "<group>"; };
+		680D0A1C8CF959798B34D1F3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6C1F87CF016DB22C71CBA440 /* Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig"; sourceTree = "<group>"; };
+		6FE29D02828473FB0D8B48C8 /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton-DiffMatchPatch-ObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		728663CEA24C383AC4CE3727 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+UriCompatibility.h"; path = "Source/NSString+UriCompatibility.h"; sourceTree = "<group>"; };
+		831EC780958A96D97B265E59 /* NSString+EscapeHTMLCharacters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+EscapeHTMLCharacters.h"; path = "Source/NSString+EscapeHTMLCharacters.h"; sourceTree = "<group>"; };
+		A403436D511779CCF496A17F /* Pods-Pairbutton-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pairbutton-acknowledgements.plist"; sourceTree = "<group>"; };
+		A5CF53F862C54E40A4B98E44 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		AB82531AB98E22C680B1A527 /* Pods-Pairbutton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton.debug.xcconfig"; sourceTree = "<group>"; };
+		C3257CA0F04B2E45061E9A5E /* Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch"; sourceTree = "<group>"; };
+		C5FEC43452EAFFD5E1DB41AC /* NSString+EscapeHTMLCharacters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+EscapeHTMLCharacters.m"; path = "Source/NSString+EscapeHTMLCharacters.m"; sourceTree = "<group>"; };
+		C62681549F94AB6B30A8AF25 /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatchCFUtilities.h; path = Source/DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
+		C891FF9546E7C35AC12C46DD /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+UriCompatibility.m"; path = "Source/NSString+UriCompatibility.m"; sourceTree = "<group>"; };
+		CF1D2C28314067CCA016EFC1 /* DMPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMPatch.h; path = Source/DMPatch.h; sourceTree = "<group>"; };
+		E048FDD3E2C4FB53EAEBA0FB /* libPods-Pairbutton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52AB55779A8D6621BB6B6B1 /* DiffMatchPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatch.h; path = Source/DiffMatchPatch.h; sourceTree = "<group>"; };
+		F446D86E0A033B56CAC363DF /* DMPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DMPatch.m; path = Source/DMPatch.m; sourceTree = "<group>"; };
+		F81FA926012169C391B43EFB /* Pods-Pairbutton-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pairbutton-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9FCC3BA42EE559C6B77204E /* Pods-Pairbutton-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pairbutton-environment.h"; sourceTree = "<group>"; };
+		FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21D53C105961D9C4A32B0990 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DC5CDE70A9563798E30E53 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A9D68B6D66C0A968B052E9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB42B7BB51F2D6E6F533DC1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21094BC8875127FDE15E4BAE /* Pods-Pairbutton */ = {
+			isa = PBXGroup;
+			children = (
+				F81FA926012169C391B43EFB /* Pods-Pairbutton-acknowledgements.markdown */,
+				A403436D511779CCF496A17F /* Pods-Pairbutton-acknowledgements.plist */,
+				2B28C6088915BB56888B0A23 /* Pods-Pairbutton-dummy.m */,
+				F9FCC3BA42EE559C6B77204E /* Pods-Pairbutton-environment.h */,
+				3F02F72B1CFA62128BB43E96 /* Pods-Pairbutton-resources.sh */,
+				AB82531AB98E22C680B1A527 /* Pods-Pairbutton.debug.xcconfig */,
+				2A6A3A7F1B0FA9F1FDE7E124 /* Pods-Pairbutton.release.xcconfig */,
+			);
+			name = "Pods-Pairbutton";
+			path = "Target Support Files/Pods-Pairbutton";
+			sourceTree = "<group>";
+		};
+		36D1A6BE9CF3274AB43486F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87E8A338050F34A47F6DEEC2 /* DiffMatchPatch-ObjC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50F02640EA15751177A5C740 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E048FDD3E2C4FB53EAEBA0FB /* libPods-Pairbutton.a */,
+				6FE29D02828473FB0D8B48C8 /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5830B1CD9F8F9348F08B443E = {
+			isa = PBXGroup;
+			children = (
+				680D0A1C8CF959798B34D1F3 /* Podfile */,
+				9C9C7CD9F190D1D6C4115A62 /* Frameworks */,
+				36D1A6BE9CF3274AB43486F7 /* Pods */,
+				50F02640EA15751177A5C740 /* Products */,
+				A7D86B7096F62449CC138CA4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		58E242722716D38507ECC320 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF53F862C54E40A4B98E44 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		87E8A338050F34A47F6DEEC2 /* DiffMatchPatch-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				259151628BFDF61BDA52440E /* DMDiff.h */,
+				2B429D59B968C9885FFE226E /* DMDiff.m */,
+				CF1D2C28314067CCA016EFC1 /* DMPatch.h */,
+				F446D86E0A033B56CAC363DF /* DMPatch.m */,
+				E52AB55779A8D6621BB6B6B1 /* DiffMatchPatch.h */,
+				50EC74125BB710F22728AF6F /* DiffMatchPatch.m */,
+				C62681549F94AB6B30A8AF25 /* DiffMatchPatchCFUtilities.h */,
+				5CFFEFBB15168EB8540F2981 /* DiffMatchPatchCFUtilities.m */,
+				0ED0B21D8E7315DD49D07C7E /* DiffMatchPatchInternals.h */,
+				831EC780958A96D97B265E59 /* NSString+EscapeHTMLCharacters.h */,
+				C5FEC43452EAFFD5E1DB41AC /* NSString+EscapeHTMLCharacters.m */,
+				728663CEA24C383AC4CE3727 /* NSString+UriCompatibility.h */,
+				C891FF9546E7C35AC12C46DD /* NSString+UriCompatibility.m */,
+				C6189E483133AAEE4C276C23 /* Support Files */,
+			);
+			path = "DiffMatchPatch-ObjC";
+			sourceTree = "<group>";
+		};
+		9C9C7CD9F190D1D6C4115A62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E242722716D38507ECC320 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7D86B7096F62449CC138CA4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				21094BC8875127FDE15E4BAE /* Pods-Pairbutton */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C6189E483133AAEE4C276C23 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C1F87CF016DB22C71CBA440 /* Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig */,
+				FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */,
+				2D27E6E5F9FB3869EF89792B /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */,
+				C3257CA0F04B2E45061E9A5E /* Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37C986F4D669F1B8C2E9481C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6CB43346B0BB40F36D2A035 /* DMDiff.h in Headers */,
+				69F85382457921CDA3CCDD40 /* DMPatch.h in Headers */,
+				79414421DF3A7CE8371CD686 /* DiffMatchPatch.h in Headers */,
+				9BAE45E614750B9B757A562D /* DiffMatchPatchCFUtilities.h in Headers */,
+				756094F2635A641486522309 /* DiffMatchPatchInternals.h in Headers */,
+				06F27E4FA53C525F847E4543 /* NSString+EscapeHTMLCharacters.h in Headers */,
+				231704A0098C8245DF366D1B /* NSString+UriCompatibility.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21455C07D0218D8C7A7A48C4 /* Pods-Pairbutton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F9A252D2E641946484995DC /* Build configuration list for PBXNativeTarget "Pods-Pairbutton" */;
+			buildPhases = (
+				55C4997E7B38EFAD1AEC8F4C /* Sources */,
+				4A9D68B6D66C0A968B052E9D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				703C250CD57CB492D014A921 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pairbutton";
+			productName = "Pods-Pairbutton";
+			productReference = E048FDD3E2C4FB53EAEBA0FB /* libPods-Pairbutton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C18CAF2F1C3E2E5640E4FD99 /* Pods-Pairbutton-DiffMatchPatch-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A71140468FC72CB22923AAF /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-DiffMatchPatch-ObjC" */;
+			buildPhases = (
+				2474B664F7D3D11505ABCEF2 /* Sources */,
+				21D53C105961D9C4A32B0990 /* Frameworks */,
+				37C986F4D669F1B8C2E9481C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pairbutton-DiffMatchPatch-ObjC";
+			productName = "Pods-Pairbutton-DiffMatchPatch-ObjC";
+			productReference = 6FE29D02828473FB0D8B48C8 /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C91D661C60DAA86A0124BAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = 18F11D12585FC200696E2A27 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5830B1CD9F8F9348F08B443E;
+			productRefGroup = 50F02640EA15751177A5C740 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21455C07D0218D8C7A7A48C4 /* Pods-Pairbutton */,
+				C18CAF2F1C3E2E5640E4FD99 /* Pods-Pairbutton-DiffMatchPatch-ObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2474B664F7D3D11505ABCEF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76863EFED2E3057BBA9A28FD /* DMDiff.m in Sources */,
+				8A6F2110A335FE1B449EB55A /* DMPatch.m in Sources */,
+				62AD26251BA6D98972DAB56C /* DiffMatchPatch.m in Sources */,
+				902E05325192E5069A1926C5 /* DiffMatchPatchCFUtilities.m in Sources */,
+				13070E935D0450E89F1C159C /* NSString+EscapeHTMLCharacters.m in Sources */,
+				1E29DFD2BEA9179BF156AA71 /* NSString+UriCompatibility.m in Sources */,
+				B5502AF10754DB31737CE0CB /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C4997E7B38EFAD1AEC8F4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5381B7318D4F2207217D1F0B /* Pods-Pairbutton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		703C250CD57CB492D014A921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C18CAF2F1C3E2E5640E4FD99 /* Pods-Pairbutton-DiffMatchPatch-ObjC */;
+			targetProxy = C700A4411EC21C0C995FA202 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		493550D905881E172F8C044B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A6A3A7F1B0FA9F1FDE7E124 /* Pods-Pairbutton.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		76205D661BC13BB3AB7CA4F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC/Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		77456359FF5A44E25EB5E123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB82531AB98E22C680B1A527 /* Pods-Pairbutton.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7958BC14EB3BD7A921C9D2D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC/Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D12F099228E71D384661CD9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		F02915BD879E36670FA70A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F9A252D2E641946484995DC /* Build configuration list for PBXNativeTarget "Pods-Pairbutton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77456359FF5A44E25EB5E123 /* Debug */,
+				493550D905881E172F8C044B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F11D12585FC200696E2A27 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12F099228E71D384661CD9A /* Debug */,
+				F02915BD879E36670FA70A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A71140468FC72CB22923AAF /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-DiffMatchPatch-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76205D661BC13BB3AB7CA4F2 /* Debug */,
+				7958BC14EB3BD7A921C9D2D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C91D661C60DAA86A0124BAF /* Project object */;
+}

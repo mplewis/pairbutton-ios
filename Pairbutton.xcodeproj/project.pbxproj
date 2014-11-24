@@ -11,10 +11,10 @@
 		363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AE81A1382EA005D2DAB /* ViewController.swift */; };
 		363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEA1A1382EA005D2DAB /* Images.xcassets */; };
 		363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEC1A1382EA005D2DAB /* Main.storyboard */; };
-		36BFD9821A176BD700D6BDD5 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BFD9801A176BD700D6BDD5 /* VDKQueue.m */; };
-		36BFD9871A17767E00D6BDD5 /* DiffMatchPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BFD9861A17767E00D6BDD5 /* DiffMatchPatch.framework */; };
 		36C159EF1A15EA5E00A8BA60 /* watch_file.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C159EE1A15EA5E00A8BA60 /* watch_file.py */; };
 		36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFD17F1A14840C00B8C40C /* WatchedFile.swift */; };
+		36F6B3041A23B9F500E391F5 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F6B3031A23B9F500E391F5 /* VDKQueue.m */; };
+		D5F7389ED58D1F19E1122BC8 /* libPods-Pairbutton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2263081F81E61041960341 /* libPods-Pairbutton.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,12 +37,14 @@
 		363C4AE81A1382EA005D2DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		363C4AEA1A1382EA005D2DAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		363C4AED1A1382EA005D2DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		36BFD9801A176BD700D6BDD5 /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKQueue.m; sourceTree = "<group>"; };
-		36BFD9811A176BD700D6BDD5 /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
-		36BFD9861A17767E00D6BDD5 /* DiffMatchPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DiffMatchPatch.framework; sourceTree = "<group>"; };
 		36C159EA1A15E95D00A8BA60 /* Pairbutton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pairbutton-Bridging-Header.h"; sourceTree = "<group>"; };
 		36C159EE1A15EA5E00A8BA60 /* watch_file.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = watch_file.py; sourceTree = "<group>"; };
 		36DFD17F1A14840C00B8C40C /* WatchedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedFile.swift; sourceTree = "<group>"; };
+		36F6B3021A23B9F500E391F5 /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
+		36F6B3031A23B9F500E391F5 /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKQueue.m; sourceTree = "<group>"; };
+		7B2263081F81E61041960341 /* libPods-Pairbutton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE6595884A6E5DFE3540DDA /* Pods-Pairbutton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pairbutton.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pairbutton/Pods-Pairbutton.release.xcconfig"; sourceTree = "<group>"; };
+		B8FD9B237894C69B4C1CC1EB /* Pods-Pairbutton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pairbutton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pairbutton/Pods-Pairbutton.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36BFD9871A17767E00D6BDD5 /* DiffMatchPatch.framework in Frameworks */,
+				D5F7389ED58D1F19E1122BC8 /* libPods-Pairbutton.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +65,8 @@
 				363C4AE31A1382EA005D2DAB /* Pairbutton */,
 				3677014E1A171C6300773DA9 /* Vendor */,
 				363C4AE21A1382EA005D2DAB /* Products */,
+				DA181758C5E50DE983283645 /* Pods */,
+				5D98D09B63F979DEF91FA9FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,20 +104,36 @@
 		3677014E1A171C6300773DA9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				36BFD97C1A1769AC00D6BDD5 /* VDKQueue */,
-				36BFD9861A17767E00D6BDD5 /* DiffMatchPatch.framework */,
+				36F6B3051A23BBEE00E391F5 /* VDKQueue */,
 			);
 			name = Vendor;
 			path = Pairbutton;
 			sourceTree = "<group>";
 		};
-		36BFD97C1A1769AC00D6BDD5 /* VDKQueue */ = {
+		36F6B3051A23BBEE00E391F5 /* VDKQueue */ = {
 			isa = PBXGroup;
 			children = (
-				36BFD9801A176BD700D6BDD5 /* VDKQueue.m */,
-				36BFD9811A176BD700D6BDD5 /* VDKQueue.h */,
+				36F6B3021A23B9F500E391F5 /* VDKQueue.h */,
+				36F6B3031A23B9F500E391F5 /* VDKQueue.m */,
 			);
 			name = VDKQueue;
+			sourceTree = "<group>";
+		};
+		5D98D09B63F979DEF91FA9FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B2263081F81E61041960341 /* libPods-Pairbutton.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA181758C5E50DE983283645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8FD9B237894C69B4C1CC1EB /* Pods-Pairbutton.debug.xcconfig */,
+				8EE6595884A6E5DFE3540DDA /* Pods-Pairbutton.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,10 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 363C4AFD1A1382EA005D2DAB /* Build configuration list for PBXNativeTarget "Pairbutton" */;
 			buildPhases = (
+				C7BF7A7A8AE9D6C0AE0D3F43 /* Check Pods Manifest.lock */,
 				363C4ADD1A1382EA005D2DAB /* Sources */,
 				363C4ADE1A1382EA005D2DAB /* Frameworks */,
 				363C4ADF1A1382EA005D2DAB /* Resources */,
 				36BFD9781A175E9E00D6BDD5 /* Copy Frameworks */,
+				5A1DFE6271CA973BF1AB49CB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +205,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A1DFE6271CA973BF1AB49CB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pairbutton/Pods-Pairbutton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BF7A7A8AE9D6C0AE0D3F43 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		363C4ADD1A1382EA005D2DAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -191,7 +246,7 @@
 				36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */,
 				363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */,
 				363C4AE71A1382EA005D2DAB /* AppDelegate.swift in Sources */,
-				36BFD9821A176BD700D6BDD5 /* VDKQueue.m in Sources */,
+				36F6B3041A23B9F500E391F5 /* VDKQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +343,7 @@
 		};
 		363C4AFE1A1382EA005D2DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FD9B237894C69B4C1CC1EB /* Pods-Pairbutton.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -307,6 +363,7 @@
 		};
 		363C4AFF1A1382EA005D2DAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EE6595884A6E5DFE3540DDA /* Pods-Pairbutton.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

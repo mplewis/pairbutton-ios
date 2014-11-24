@@ -42,9 +42,8 @@ class WatchedFile: NSObject, VDKQueueDelegate {
                 if self.lastContents == newContents {
                     return
                 }
-                let dmp = DiffMatchPatch()
-                let patches = dmp.patch_makeFromOldString(self.lastContents, andNewString: newContents)
-                let patchesString = dmp.patch_toText(patches)
+                let patches = patch_patchesFromTexts(self.lastContents, newContents)
+                let patchesString = patch_patchesToText(patches)
                 self.onDelta?(delta: patchesString)
                 self.lastContents = newContents
             } else {

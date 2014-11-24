@@ -1,0 +1,10 @@
+PODS:
+  - DiffMatchPatch-ObjC (1.0.0)
+
+DEPENDENCIES:
+  - DiffMatchPatch-ObjC (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  DiffMatchPatch-ObjC: 5dd3947d4917a8d110868d5879bfc06dbe348b0c
+
+COCOAPODS: 0.34.4
