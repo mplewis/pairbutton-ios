@@ -11,7 +11,6 @@
 		363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AE81A1382EA005D2DAB /* ViewController.swift */; };
 		363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEA1A1382EA005D2DAB /* Images.xcassets */; };
 		363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEC1A1382EA005D2DAB /* Main.storyboard */; };
-		36C159EF1A15EA5E00A8BA60 /* watch_file.py in Resources */ = {isa = PBXBuildFile; fileRef = 36C159EE1A15EA5E00A8BA60 /* watch_file.py */; };
 		36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFD17F1A14840C00B8C40C /* WatchedFile.swift */; };
 		36F6B3041A23B9F500E391F5 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F6B3031A23B9F500E391F5 /* VDKQueue.m */; };
 		D5F7389ED58D1F19E1122BC8 /* libPods-Pairbutton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2263081F81E61041960341 /* libPods-Pairbutton.a */; };
@@ -38,7 +37,6 @@
 		363C4AEA1A1382EA005D2DAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		363C4AED1A1382EA005D2DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36C159EA1A15E95D00A8BA60 /* Pairbutton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pairbutton-Bridging-Header.h"; sourceTree = "<group>"; };
-		36C159EE1A15EA5E00A8BA60 /* watch_file.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = watch_file.py; sourceTree = "<group>"; };
 		36DFD17F1A14840C00B8C40C /* WatchedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedFile.swift; sourceTree = "<group>"; };
 		36F6B3021A23B9F500E391F5 /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
 		36F6B3031A23B9F500E391F5 /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDKQueue.m; sourceTree = "<group>"; };
@@ -81,11 +79,11 @@
 		363C4AE31A1382EA005D2DAB /* Pairbutton */ = {
 			isa = PBXGroup;
 			children = (
-				363C4AEC1A1382EA005D2DAB /* Main.storyboard */,
-				363C4AE61A1382EA005D2DAB /* AppDelegate.swift */,
-				363C4AE81A1382EA005D2DAB /* ViewController.swift */,
-				36DFD17F1A14840C00B8C40C /* WatchedFile.swift */,
-				363C4AEA1A1382EA005D2DAB /* Images.xcassets */,
+				36F6B30A1A23C20A00E391F5 /* App Delegate */,
+				36F6B30D1A23C21700E391F5 /* Models */,
+				36F6B30B1A23C21200E391F5 /* Views */,
+				36F6B30C1A23C21400E391F5 /* Controllers */,
+				36F6B30E1A23C26600E391F5 /* Resources */,
 				363C4AE41A1382EA005D2DAB /* Supporting Files */,
 			);
 			path = Pairbutton;
@@ -96,9 +94,8 @@
 			children = (
 				36C159EA1A15E95D00A8BA60 /* Pairbutton-Bridging-Header.h */,
 				363C4AE51A1382EA005D2DAB /* Info.plist */,
-				36C159EE1A15EA5E00A8BA60 /* watch_file.py */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3677014E1A171C6300773DA9 /* Vendor */ = {
@@ -106,8 +103,7 @@
 			children = (
 				36F6B3051A23BBEE00E391F5 /* VDKQueue */,
 			);
-			name = Vendor;
-			path = Pairbutton;
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		36F6B3051A23BBEE00E391F5 /* VDKQueue */ = {
@@ -117,6 +113,46 @@
 				36F6B3031A23B9F500E391F5 /* VDKQueue.m */,
 			);
 			name = VDKQueue;
+			sourceTree = "<group>";
+		};
+		36F6B30A1A23C20A00E391F5 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AE61A1382EA005D2DAB /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		36F6B30B1A23C21200E391F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AEC1A1382EA005D2DAB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36F6B30C1A23C21400E391F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AE81A1382EA005D2DAB /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		36F6B30D1A23C21700E391F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36DFD17F1A14840C00B8C40C /* WatchedFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36F6B30E1A23C26600E391F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				363C4AEA1A1382EA005D2DAB /* Images.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5D98D09B63F979DEF91FA9FA /* Frameworks */ = {
@@ -199,7 +235,6 @@
 			files = (
 				363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */,
 				363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */,
-				36C159EF1A15EA5E00A8BA60 /* watch_file.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +380,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8FD9B237894C69B4C1CC1EB /* Pods-Pairbutton.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -353,10 +387,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pairbutton",
 				);
-				INFOPLIST_FILE = Pairbutton/Info.plist;
+				INFOPLIST_FILE = "Pairbutton/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Pairbutton/Pairbutton-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pairbutton/Supporting Files/Pairbutton-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -365,7 +399,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EE6595884A6E5DFE3540DDA /* Pods-Pairbutton.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -373,10 +406,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pairbutton",
 				);
-				INFOPLIST_FILE = Pairbutton/Info.plist;
+				INFOPLIST_FILE = "Pairbutton/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Pairbutton/Pairbutton-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pairbutton/Supporting Files/Pairbutton-Bridging-Header.h";
 			};
 			name = Release;
 		};
