@@ -7,230 +7,383 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06F27E4FA53C525F847E4543 /* NSString+EscapeHTMLCharacters.h in Headers */ = {isa = PBXBuildFile; fileRef = 831EC780958A96D97B265E59 /* NSString+EscapeHTMLCharacters.h */; };
-		13070E935D0450E89F1C159C /* NSString+EscapeHTMLCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FEC43452EAFFD5E1DB41AC /* NSString+EscapeHTMLCharacters.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		1E29DFD2BEA9179BF156AA71 /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = C891FF9546E7C35AC12C46DD /* NSString+UriCompatibility.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		231704A0098C8245DF366D1B /* NSString+UriCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 728663CEA24C383AC4CE3727 /* NSString+UriCompatibility.h */; };
-		5381B7318D4F2207217D1F0B /* Pods-Pairbutton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B28C6088915BB56888B0A23 /* Pods-Pairbutton-dummy.m */; };
-		62AD26251BA6D98972DAB56C /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EC74125BB710F22728AF6F /* DiffMatchPatch.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		69F85382457921CDA3CCDD40 /* DMPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1D2C28314067CCA016EFC1 /* DMPatch.h */; };
-		6DB42B7BB51F2D6E6F533DC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CF53F862C54E40A4B98E44 /* Cocoa.framework */; };
-		756094F2635A641486522309 /* DiffMatchPatchInternals.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ED0B21D8E7315DD49D07C7E /* DiffMatchPatchInternals.h */; };
-		76863EFED2E3057BBA9A28FD /* DMDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B429D59B968C9885FFE226E /* DMDiff.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		79414421DF3A7CE8371CD686 /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E52AB55779A8D6621BB6B6B1 /* DiffMatchPatch.h */; };
-		8A6F2110A335FE1B449EB55A /* DMPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F446D86E0A033B56CAC363DF /* DMPatch.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		902E05325192E5069A1926C5 /* DiffMatchPatchCFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFFEFBB15168EB8540F2981 /* DiffMatchPatchCFUtilities.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
-		9BAE45E614750B9B757A562D /* DiffMatchPatchCFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C62681549F94AB6B30A8AF25 /* DiffMatchPatchCFUtilities.h */; };
-		B5502AF10754DB31737CE0CB /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D27E6E5F9FB3869EF89792B /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */; };
-		B7DC5CDE70A9563798E30E53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CF53F862C54E40A4B98E44 /* Cocoa.framework */; };
-		E6CB43346B0BB40F36D2A035 /* DMDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 259151628BFDF61BDA52440E /* DMDiff.h */; };
+		01E0ADF4A76B4947A3C8715F /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7F9D7CDCB822E22668F2AC /* AFURLRequestSerialization.h */; };
+		09DB348589B9C32ACC955028 /* NSString+EscapeHTMLCharacters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F53D607DD1362CA6AA6FE4D /* NSString+EscapeHTMLCharacters.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		0E3F2C352B75A39011D08DB9 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB5B64D2163AFAD152A4BB /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		0F003257C26C3647116611CC /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9389A0932916C63A00B10E82 /* AFHTTPRequestOperationManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1464EDCE726FC484A19A1284 /* DiffMatchPatchCFUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B82CF5AAED0D17770BA513 /* DiffMatchPatchCFUtilities.h */; };
+		1A0FD1F4A960BA023853A79A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9603A5BFFE9FAE615090C5C1 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1B980B3CB1FB17F1EA0142B9 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A2BCC6E6578AA8DFA9F784 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		1D0725906411C2170E5EC180 /* DMDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BDED3DA9F4DC8F098C1E33 /* DMDiff.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		22A1620FD7FF2092791EC921 /* Pods-Pairbutton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5744DD5580DE536593F435A2 /* Pods-Pairbutton-dummy.m */; };
+		295B0D7D2EAE8C044BFBE4A9 /* DiffMatchPatchInternals.h in Headers */ = {isa = PBXBuildFile; fileRef = EC1D0DBB0704713C8FE22928 /* DiffMatchPatchInternals.h */; };
+		2E4846E9CFD4F1C96F14E497 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = A79F16F31E0746697143A7B7 /* AFURLResponseSerialization.h */; };
+		32F534138D0A71431F1E2DE4 /* DiffMatchPatchCFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFB4DD26C53D07254BE6ADD /* DiffMatchPatchCFUtilities.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		3A141BB3ED96C6B119022F77 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7C006395C83F9A1D5A536 /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		3DFDC2D2E143A8FE6E04B6B0 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5896CC5E10156BE309C3BBED /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		4A2780CF2D78687E958C48E1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C3EC5C99EBA16ED8C546E /* Cocoa.framework */; };
+		5846B7B849DCD44BA0DBCA1A /* DMPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 929C603B75ED052D24149D48 /* DMPatch.h */; };
+		5AF9E1807C2209C849431DF6 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F31D73A1D76AA43AF4C38A38 /* AFNetworkReachabilityManager.h */; };
+		5C98E1010F618424DB687977 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A93222410180A80189D9D17F /* AFNetworking.h */; };
+		6085EB6FA3F2E105E8400D58 /* NSString+EscapeHTMLCharacters.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F878138B30722C0B18CBE2A /* NSString+EscapeHTMLCharacters.h */; };
+		6CBFAEAADDE08D01CB9409BB /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = E7348EAC2D4B7213B4A834FB /* AFSecurityPolicy.h */; };
+		727EEB260B9C2D089B0D0CC5 /* DMPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4178636423EF815CEECE8D7A /* DMPatch.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		7EF4434B866307474A9529D2 /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D80A66AA1123412D71830 /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */; };
+		84EE0AC58C813623835BB19C /* DiffMatchPatch.h in Headers */ = {isa = PBXBuildFile; fileRef = A2060E6BFA8845D84F7858CA /* DiffMatchPatch.h */; };
+		85AD7798B1E42F80251A4BF4 /* Pods-Pairbutton-AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C30D3A0B0A60DC89A3E6837 /* Pods-Pairbutton-AFNetworking-dummy.m */; };
+		8612ED936C8205F661AEF8C8 /* NSString+UriCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4372AC632A077B1BACEC0285 /* NSString+UriCompatibility.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9CF9B539CB1E9CC41E9DC014 /* DiffMatchPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC07B2F0F446FBA504AA68F /* DiffMatchPatch.m */; settings = {COMPILER_FLAGS = "-fobjc-arc -DOS_OBJECT_USE_OBJC=0"; }; };
+		9EB961AA0C55BC89D0C66CB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6425FCB401B17171B611C303 /* SystemConfiguration.framework */; };
+		9F5EF160EE8BCAA5C5A8D42D /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 311EEE69777E03CD9705FA04 /* AFHTTPRequestOperation.h */; };
+		AFFB43FBBC99FCA65F5DBC18 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C3EC5C99EBA16ED8C546E /* Cocoa.framework */; };
+		B333A3BDBBBFF3E60634F08A /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0133E4240164B7E4BE995378 /* AFHTTPSessionManager.h */; };
+		B90838EAB0CEFAFF4D78E0C0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617EACB978990BEAB7DBCFD0 /* Security.framework */; };
+		BE618259AEC3F6BEB99D67B1 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DF8409F3534B7F0F70E0532E /* AFHTTPRequestOperationManager.h */; };
+		BFC7CDF9D879A5F57BEFD681 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 150D515B13E99FB26E53E2DE /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		C21578C594266A864759CA5F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB85D09BAD49BE79E15A11B /* CoreServices.framework */; };
+		C24C1F8A2E070E1F282345D0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2C3EC5C99EBA16ED8C546E /* Cocoa.framework */; };
+		CBA52EF78AB6C934A7F6D681 /* DMDiff.h in Headers */ = {isa = PBXBuildFile; fileRef = 83998EBFDF0F58D44121C4E3 /* DMDiff.h */; };
+		D069E33A7AC00E828E771271 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 788DAF1F00903184FD5DAD7E /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		DCE0F6EBBA8149C77E1E7338 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 747D83D2BA219DA287AB8C99 /* AFURLSessionManager.h */; };
+		E236176D6C461BC5516F267D /* NSString+UriCompatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA8FBA638DEBEE85CD26710 /* NSString+UriCompatibility.h */; };
+		ECFEC936D33F7CF84903B734 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 45872F24201165FEEC0268BA /* AFURLConnectionOperation.h */; };
+		EF40532706363A6C917D61A9 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4323BCEA94FA6DC6418B34 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C700A4411EC21C0C995FA202 /* PBXContainerItemProxy */ = {
+		96369C8E1F4AA1CFD63A9F03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9C91D661C60DAA86A0124BAF /* Project object */;
+			containerPortal = AA601075BA6AA8D1A086F7A9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C18CAF2F1C3E2E5640E4FD99;
+			remoteGlobalIDString = 1B6B07D0397EC725E9306975;
 			remoteInfo = "Pods-Pairbutton-DiffMatchPatch-ObjC";
+		};
+		B126F574970C4DE28D485B21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA601075BA6AA8D1A086F7A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2898B7C1AC5B07102C14970E;
+			remoteInfo = "Pods-Pairbutton-AFNetworking";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ED0B21D8E7315DD49D07C7E /* DiffMatchPatchInternals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatchInternals.h; path = Source/DiffMatchPatchInternals.h; sourceTree = "<group>"; };
-		259151628BFDF61BDA52440E /* DMDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMDiff.h; path = Source/DMDiff.h; sourceTree = "<group>"; };
-		2A6A3A7F1B0FA9F1FDE7E124 /* Pods-Pairbutton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton.release.xcconfig"; sourceTree = "<group>"; };
-		2B28C6088915BB56888B0A23 /* Pods-Pairbutton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pairbutton-dummy.m"; sourceTree = "<group>"; };
-		2B429D59B968C9885FFE226E /* DMDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DMDiff.m; path = Source/DMDiff.m; sourceTree = "<group>"; };
-		2D27E6E5F9FB3869EF89792B /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m"; sourceTree = "<group>"; };
-		3F02F72B1CFA62128BB43E96 /* Pods-Pairbutton-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pairbutton-resources.sh"; sourceTree = "<group>"; };
-		50EC74125BB710F22728AF6F /* DiffMatchPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiffMatchPatch.m; path = Source/DiffMatchPatch.m; sourceTree = "<group>"; };
-		5CFFEFBB15168EB8540F2981 /* DiffMatchPatchCFUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiffMatchPatchCFUtilities.m; path = Source/DiffMatchPatchCFUtilities.m; sourceTree = "<group>"; };
-		680D0A1C8CF959798B34D1F3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6C1F87CF016DB22C71CBA440 /* Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig"; sourceTree = "<group>"; };
-		6FE29D02828473FB0D8B48C8 /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton-DiffMatchPatch-ObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		728663CEA24C383AC4CE3727 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+UriCompatibility.h"; path = "Source/NSString+UriCompatibility.h"; sourceTree = "<group>"; };
-		831EC780958A96D97B265E59 /* NSString+EscapeHTMLCharacters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+EscapeHTMLCharacters.h"; path = "Source/NSString+EscapeHTMLCharacters.h"; sourceTree = "<group>"; };
-		A403436D511779CCF496A17F /* Pods-Pairbutton-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pairbutton-acknowledgements.plist"; sourceTree = "<group>"; };
-		A5CF53F862C54E40A4B98E44 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		AB82531AB98E22C680B1A527 /* Pods-Pairbutton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton.debug.xcconfig"; sourceTree = "<group>"; };
-		C3257CA0F04B2E45061E9A5E /* Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch"; sourceTree = "<group>"; };
-		C5FEC43452EAFFD5E1DB41AC /* NSString+EscapeHTMLCharacters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+EscapeHTMLCharacters.m"; path = "Source/NSString+EscapeHTMLCharacters.m"; sourceTree = "<group>"; };
-		C62681549F94AB6B30A8AF25 /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatchCFUtilities.h; path = Source/DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
-		C891FF9546E7C35AC12C46DD /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+UriCompatibility.m"; path = "Source/NSString+UriCompatibility.m"; sourceTree = "<group>"; };
-		CF1D2C28314067CCA016EFC1 /* DMPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMPatch.h; path = Source/DMPatch.h; sourceTree = "<group>"; };
-		E048FDD3E2C4FB53EAEBA0FB /* libPods-Pairbutton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E52AB55779A8D6621BB6B6B1 /* DiffMatchPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatch.h; path = Source/DiffMatchPatch.h; sourceTree = "<group>"; };
-		F446D86E0A033B56CAC363DF /* DMPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DMPatch.m; path = Source/DMPatch.m; sourceTree = "<group>"; };
-		F81FA926012169C391B43EFB /* Pods-Pairbutton-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pairbutton-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F9FCC3BA42EE559C6B77204E /* Pods-Pairbutton-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pairbutton-environment.h"; sourceTree = "<group>"; };
-		FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig"; sourceTree = "<group>"; };
+		011385D8C7824B1A4A20CE5E /* Pods-Pairbutton-AFNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-AFNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		0133E4240164B7E4BE995378 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		150D515B13E99FB26E53E2DE /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		16E01DE6F4D74030EB9FCD96 /* Pods-Pairbutton-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pairbutton-environment.h"; sourceTree = "<group>"; };
+		1DFB4DD26C53D07254BE6ADD /* DiffMatchPatchCFUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiffMatchPatchCFUtilities.m; path = Source/DiffMatchPatchCFUtilities.m; sourceTree = "<group>"; };
+		1F53D607DD1362CA6AA6FE4D /* NSString+EscapeHTMLCharacters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+EscapeHTMLCharacters.m"; path = "Source/NSString+EscapeHTMLCharacters.m"; sourceTree = "<group>"; };
+		253FFE2351EBB57F7A85E763 /* Pods-Pairbutton-AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pairbutton-AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		2CC7C006395C83F9A1D5A536 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		2E1EAC334D3EA2FDD28AE5A7 /* Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig"; sourceTree = "<group>"; };
+		311EEE69777E03CD9705FA04 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		3176C2B4479F256148BD2132 /* libPods-Pairbutton-AFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton-AFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A2BCC6E6578AA8DFA9F784 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		3C4D80A66AA1123412D71830 /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m"; sourceTree = "<group>"; };
+		4178636423EF815CEECE8D7A /* DMPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DMPatch.m; path = Source/DMPatch.m; sourceTree = "<group>"; };
+		42FF5740A7BA015A409D6627 /* Pods-Pairbutton-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pairbutton-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4372AC632A077B1BACEC0285 /* NSString+UriCompatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+UriCompatibility.m"; path = "Source/NSString+UriCompatibility.m"; sourceTree = "<group>"; };
+		45872F24201165FEEC0268BA /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		4ACA53255DB98F341C8DC210 /* Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch"; sourceTree = "<group>"; };
+		4B7F9D7CDCB822E22668F2AC /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		4C30D3A0B0A60DC89A3E6837 /* Pods-Pairbutton-AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pairbutton-AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		52C8FC10A9F8DBFDBF7A4CAA /* Pods-Pairbutton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton.debug.xcconfig"; sourceTree = "<group>"; };
+		53B82CF5AAED0D17770BA513 /* DiffMatchPatchCFUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatchCFUtilities.h; path = Source/DiffMatchPatchCFUtilities.h; sourceTree = "<group>"; };
+		5744DD5580DE536593F435A2 /* Pods-Pairbutton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pairbutton-dummy.m"; sourceTree = "<group>"; };
+		5896CC5E10156BE309C3BBED /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		6021DC00CB4D9B282440235E /* Pods-Pairbutton-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pairbutton-resources.sh"; sourceTree = "<group>"; };
+		617EACB978990BEAB7DBCFD0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		6425FCB401B17171B611C303 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		6D737F9D0AFB2331EDA66B14 /* Pods-Pairbutton-AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-AFNetworking.xcconfig"; sourceTree = "<group>"; };
+		6E4323BCEA94FA6DC6418B34 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		747D83D2BA219DA287AB8C99 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		788DAF1F00903184FD5DAD7E /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		79BDED3DA9F4DC8F098C1E33 /* DMDiff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DMDiff.m; path = Source/DMDiff.m; sourceTree = "<group>"; };
+		83998EBFDF0F58D44121C4E3 /* DMDiff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMDiff.h; path = Source/DMDiff.h; sourceTree = "<group>"; };
+		8A2C3EC5C99EBA16ED8C546E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		8A35335BA161F028104607EA /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton-DiffMatchPatch-ObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA8FBA638DEBEE85CD26710 /* NSString+UriCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+UriCompatibility.h"; path = "Source/NSString+UriCompatibility.h"; sourceTree = "<group>"; };
+		8F878138B30722C0B18CBE2A /* NSString+EscapeHTMLCharacters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+EscapeHTMLCharacters.h"; path = "Source/NSString+EscapeHTMLCharacters.h"; sourceTree = "<group>"; };
+		929C603B75ED052D24149D48 /* DMPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMPatch.h; path = Source/DMPatch.h; sourceTree = "<group>"; };
+		9389A0932916C63A00B10E82 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		9603A5BFFE9FAE615090C5C1 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		9B8014C6EC902810571850EC /* libPods-Pairbutton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pairbutton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC07B2F0F446FBA504AA68F /* DiffMatchPatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DiffMatchPatch.m; path = Source/DiffMatchPatch.m; sourceTree = "<group>"; };
+		A2060E6BFA8845D84F7858CA /* DiffMatchPatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatch.h; path = Source/DiffMatchPatch.h; sourceTree = "<group>"; };
+		A79F16F31E0746697143A7B7 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		A93222410180A80189D9D17F /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		AAC1F055E8100CF93C044DB1 /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig"; sourceTree = "<group>"; };
+		AF0FB064ABC05C48333C7C41 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BED08CA8BEC8B1737C65D163 /* Pods-Pairbutton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pairbutton.release.xcconfig"; sourceTree = "<group>"; };
+		DCDC790838AB0F2BC532BE3F /* Pods-Pairbutton-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pairbutton-acknowledgements.plist"; sourceTree = "<group>"; };
+		DEEB5B64D2163AFAD152A4BB /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DF8409F3534B7F0F70E0532E /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		E7348EAC2D4B7213B4A834FB /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		EC1D0DBB0704713C8FE22928 /* DiffMatchPatchInternals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DiffMatchPatchInternals.h; path = Source/DiffMatchPatchInternals.h; sourceTree = "<group>"; };
+		F31D73A1D76AA43AF4C38A38 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		FFB85D09BAD49BE79E15A11B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21D53C105961D9C4A32B0990 /* Frameworks */ = {
+		3AB10473C941FA97338F68D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DC5CDE70A9563798E30E53 /* Cocoa.framework in Frameworks */,
+				C24C1F8A2E070E1F282345D0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A9D68B6D66C0A968B052E9D /* Frameworks */ = {
+		4F78FA5D6377D9B9768E8FD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB42B7BB51F2D6E6F533DC1 /* Cocoa.framework in Frameworks */,
+				AFFB43FBBC99FCA65F5DBC18 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B28B96EAD6C0B7FB0A0076C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2780CF2D78687E958C48E1 /* Cocoa.framework in Frameworks */,
+				C21578C594266A864759CA5F /* CoreServices.framework in Frameworks */,
+				B90838EAB0CEFAFF4D78E0C0 /* Security.framework in Frameworks */,
+				9EB961AA0C55BC89D0C66CB5 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		21094BC8875127FDE15E4BAE /* Pods-Pairbutton */ = {
+		07A30CD8916EDE4519D7A4CF /* NSURLConnection */ = {
 			isa = PBXGroup;
 			children = (
-				F81FA926012169C391B43EFB /* Pods-Pairbutton-acknowledgements.markdown */,
-				A403436D511779CCF496A17F /* Pods-Pairbutton-acknowledgements.plist */,
-				2B28C6088915BB56888B0A23 /* Pods-Pairbutton-dummy.m */,
-				F9FCC3BA42EE559C6B77204E /* Pods-Pairbutton-environment.h */,
-				3F02F72B1CFA62128BB43E96 /* Pods-Pairbutton-resources.sh */,
-				AB82531AB98E22C680B1A527 /* Pods-Pairbutton.debug.xcconfig */,
-				2A6A3A7F1B0FA9F1FDE7E124 /* Pods-Pairbutton.release.xcconfig */,
+				311EEE69777E03CD9705FA04 /* AFHTTPRequestOperation.h */,
+				33A2BCC6E6578AA8DFA9F784 /* AFHTTPRequestOperation.m */,
+				DF8409F3534B7F0F70E0532E /* AFHTTPRequestOperationManager.h */,
+				9389A0932916C63A00B10E82 /* AFHTTPRequestOperationManager.m */,
+				45872F24201165FEEC0268BA /* AFURLConnectionOperation.h */,
+				9603A5BFFE9FAE615090C5C1 /* AFURLConnectionOperation.m */,
 			);
-			name = "Pods-Pairbutton";
-			path = "Target Support Files/Pods-Pairbutton";
+			name = NSURLConnection;
 			sourceTree = "<group>";
 		};
-		36D1A6BE9CF3274AB43486F7 /* Pods */ = {
+		14E5F668217D6B7EC8A55BED /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				87E8A338050F34A47F6DEEC2 /* DiffMatchPatch-ObjC */,
+				E7348EAC2D4B7213B4A834FB /* AFSecurityPolicy.h */,
+				788DAF1F00903184FD5DAD7E /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		16439C4B9DB8B6D996B5FA3A = {
+			isa = PBXGroup;
+			children = (
+				AF0FB064ABC05C48333C7C41 /* Podfile */,
+				9E8F8910B8E9BDB8288F480C /* Frameworks */,
+				19F60D2C958248C1B17DBA99 /* Pods */,
+				1A9349085E87E292B791ADBA /* Products */,
+				44029AB30702110B68199826 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		19F60D2C958248C1B17DBA99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6C21FC1671F32D4FD3AC17C /* AFNetworking */,
+				E287BF530804BFAD1E6CAF0B /* DiffMatchPatch-ObjC */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		50F02640EA15751177A5C740 /* Products */ = {
+		1A9349085E87E292B791ADBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E048FDD3E2C4FB53EAEBA0FB /* libPods-Pairbutton.a */,
-				6FE29D02828473FB0D8B48C8 /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */,
+				9B8014C6EC902810571850EC /* libPods-Pairbutton.a */,
+				3176C2B4479F256148BD2132 /* libPods-Pairbutton-AFNetworking.a */,
+				8A35335BA161F028104607EA /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5830B1CD9F8F9348F08B443E = {
+		44029AB30702110B68199826 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				680D0A1C8CF959798B34D1F3 /* Podfile */,
-				9C9C7CD9F190D1D6C4115A62 /* Frameworks */,
-				36D1A6BE9CF3274AB43486F7 /* Pods */,
-				50F02640EA15751177A5C740 /* Products */,
-				A7D86B7096F62449CC138CA4 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		58E242722716D38507ECC320 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				A5CF53F862C54E40A4B98E44 /* Cocoa.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		87E8A338050F34A47F6DEEC2 /* DiffMatchPatch-ObjC */ = {
-			isa = PBXGroup;
-			children = (
-				259151628BFDF61BDA52440E /* DMDiff.h */,
-				2B429D59B968C9885FFE226E /* DMDiff.m */,
-				CF1D2C28314067CCA016EFC1 /* DMPatch.h */,
-				F446D86E0A033B56CAC363DF /* DMPatch.m */,
-				E52AB55779A8D6621BB6B6B1 /* DiffMatchPatch.h */,
-				50EC74125BB710F22728AF6F /* DiffMatchPatch.m */,
-				C62681549F94AB6B30A8AF25 /* DiffMatchPatchCFUtilities.h */,
-				5CFFEFBB15168EB8540F2981 /* DiffMatchPatchCFUtilities.m */,
-				0ED0B21D8E7315DD49D07C7E /* DiffMatchPatchInternals.h */,
-				831EC780958A96D97B265E59 /* NSString+EscapeHTMLCharacters.h */,
-				C5FEC43452EAFFD5E1DB41AC /* NSString+EscapeHTMLCharacters.m */,
-				728663CEA24C383AC4CE3727 /* NSString+UriCompatibility.h */,
-				C891FF9546E7C35AC12C46DD /* NSString+UriCompatibility.m */,
-				C6189E483133AAEE4C276C23 /* Support Files */,
-			);
-			path = "DiffMatchPatch-ObjC";
-			sourceTree = "<group>";
-		};
-		9C9C7CD9F190D1D6C4115A62 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				58E242722716D38507ECC320 /* OS X */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A7D86B7096F62449CC138CA4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				21094BC8875127FDE15E4BAE /* Pods-Pairbutton */,
+				DE6DB46B7B827C78232C4BD4 /* Pods-Pairbutton */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C6189E483133AAEE4C276C23 /* Support Files */ = {
+		653442A7BDABD2D89695D3C2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6C1F87CF016DB22C71CBA440 /* Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig */,
-				FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */,
-				2D27E6E5F9FB3869EF89792B /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */,
-				C3257CA0F04B2E45061E9A5E /* Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch */,
+				2E1EAC334D3EA2FDD28AE5A7 /* Pods-Pairbutton-DiffMatchPatch-ObjC.xcconfig */,
+				AAC1F055E8100CF93C044DB1 /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */,
+				3C4D80A66AA1123412D71830 /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m */,
+				4ACA53255DB98F341C8DC210 /* Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC";
 			sourceTree = "<group>";
 		};
+		752D4F4F9E0CB632D99CBC4C /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				8A2C3EC5C99EBA16ED8C546E /* Cocoa.framework */,
+				FFB85D09BAD49BE79E15A11B /* CoreServices.framework */,
+				617EACB978990BEAB7DBCFD0 /* Security.framework */,
+				6425FCB401B17171B611C303 /* SystemConfiguration.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		9E8F8910B8E9BDB8288F480C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				752D4F4F9E0CB632D99CBC4C /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6C21FC1671F32D4FD3AC17C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A93222410180A80189D9D17F /* AFNetworking.h */,
+				07A30CD8916EDE4519D7A4CF /* NSURLConnection */,
+				CAEC9D9ABA7FFF4D292A5775 /* NSURLSession */,
+				EB0C3F511F0A4433B81BB0EF /* Reachability */,
+				14E5F668217D6B7EC8A55BED /* Security */,
+				DD265F47A7D6F54C1601BB96 /* Serialization */,
+				CFD0919F9BE4E5054D899210 /* Support Files */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		CAEC9D9ABA7FFF4D292A5775 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				0133E4240164B7E4BE995378 /* AFHTTPSessionManager.h */,
+				DEEB5B64D2163AFAD152A4BB /* AFHTTPSessionManager.m */,
+				747D83D2BA219DA287AB8C99 /* AFURLSessionManager.h */,
+				2CC7C006395C83F9A1D5A536 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		CFD0919F9BE4E5054D899210 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D737F9D0AFB2331EDA66B14 /* Pods-Pairbutton-AFNetworking.xcconfig */,
+				011385D8C7824B1A4A20CE5E /* Pods-Pairbutton-AFNetworking-Private.xcconfig */,
+				4C30D3A0B0A60DC89A3E6837 /* Pods-Pairbutton-AFNetworking-dummy.m */,
+				253FFE2351EBB57F7A85E763 /* Pods-Pairbutton-AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Pairbutton-AFNetworking";
+			sourceTree = "<group>";
+		};
+		DD265F47A7D6F54C1601BB96 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F9D7CDCB822E22668F2AC /* AFURLRequestSerialization.h */,
+				5896CC5E10156BE309C3BBED /* AFURLRequestSerialization.m */,
+				A79F16F31E0746697143A7B7 /* AFURLResponseSerialization.h */,
+				150D515B13E99FB26E53E2DE /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		DE6DB46B7B827C78232C4BD4 /* Pods-Pairbutton */ = {
+			isa = PBXGroup;
+			children = (
+				42FF5740A7BA015A409D6627 /* Pods-Pairbutton-acknowledgements.markdown */,
+				DCDC790838AB0F2BC532BE3F /* Pods-Pairbutton-acknowledgements.plist */,
+				5744DD5580DE536593F435A2 /* Pods-Pairbutton-dummy.m */,
+				16E01DE6F4D74030EB9FCD96 /* Pods-Pairbutton-environment.h */,
+				6021DC00CB4D9B282440235E /* Pods-Pairbutton-resources.sh */,
+				52C8FC10A9F8DBFDBF7A4CAA /* Pods-Pairbutton.debug.xcconfig */,
+				BED08CA8BEC8B1737C65D163 /* Pods-Pairbutton.release.xcconfig */,
+			);
+			name = "Pods-Pairbutton";
+			path = "Target Support Files/Pods-Pairbutton";
+			sourceTree = "<group>";
+		};
+		E287BF530804BFAD1E6CAF0B /* DiffMatchPatch-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				83998EBFDF0F58D44121C4E3 /* DMDiff.h */,
+				79BDED3DA9F4DC8F098C1E33 /* DMDiff.m */,
+				929C603B75ED052D24149D48 /* DMPatch.h */,
+				4178636423EF815CEECE8D7A /* DMPatch.m */,
+				A2060E6BFA8845D84F7858CA /* DiffMatchPatch.h */,
+				9FC07B2F0F446FBA504AA68F /* DiffMatchPatch.m */,
+				53B82CF5AAED0D17770BA513 /* DiffMatchPatchCFUtilities.h */,
+				1DFB4DD26C53D07254BE6ADD /* DiffMatchPatchCFUtilities.m */,
+				EC1D0DBB0704713C8FE22928 /* DiffMatchPatchInternals.h */,
+				8F878138B30722C0B18CBE2A /* NSString+EscapeHTMLCharacters.h */,
+				1F53D607DD1362CA6AA6FE4D /* NSString+EscapeHTMLCharacters.m */,
+				8EA8FBA638DEBEE85CD26710 /* NSString+UriCompatibility.h */,
+				4372AC632A077B1BACEC0285 /* NSString+UriCompatibility.m */,
+				653442A7BDABD2D89695D3C2 /* Support Files */,
+			);
+			path = "DiffMatchPatch-ObjC";
+			sourceTree = "<group>";
+		};
+		EB0C3F511F0A4433B81BB0EF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F31D73A1D76AA43AF4C38A38 /* AFNetworkReachabilityManager.h */,
+				6E4323BCEA94FA6DC6418B34 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		37C986F4D669F1B8C2E9481C /* Headers */ = {
+		198D92C03612C84CA7677FBC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6CB43346B0BB40F36D2A035 /* DMDiff.h in Headers */,
-				69F85382457921CDA3CCDD40 /* DMPatch.h in Headers */,
-				79414421DF3A7CE8371CD686 /* DiffMatchPatch.h in Headers */,
-				9BAE45E614750B9B757A562D /* DiffMatchPatchCFUtilities.h in Headers */,
-				756094F2635A641486522309 /* DiffMatchPatchInternals.h in Headers */,
-				06F27E4FA53C525F847E4543 /* NSString+EscapeHTMLCharacters.h in Headers */,
-				231704A0098C8245DF366D1B /* NSString+UriCompatibility.h in Headers */,
+				9F5EF160EE8BCAA5C5A8D42D /* AFHTTPRequestOperation.h in Headers */,
+				BE618259AEC3F6BEB99D67B1 /* AFHTTPRequestOperationManager.h in Headers */,
+				B333A3BDBBBFF3E60634F08A /* AFHTTPSessionManager.h in Headers */,
+				5AF9E1807C2209C849431DF6 /* AFNetworkReachabilityManager.h in Headers */,
+				5C98E1010F618424DB687977 /* AFNetworking.h in Headers */,
+				6CBFAEAADDE08D01CB9409BB /* AFSecurityPolicy.h in Headers */,
+				ECFEC936D33F7CF84903B734 /* AFURLConnectionOperation.h in Headers */,
+				01E0ADF4A76B4947A3C8715F /* AFURLRequestSerialization.h in Headers */,
+				2E4846E9CFD4F1C96F14E497 /* AFURLResponseSerialization.h in Headers */,
+				DCE0F6EBBA8149C77E1E7338 /* AFURLSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5710EDD89E6A0DE88993FEFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA52EF78AB6C934A7F6D681 /* DMDiff.h in Headers */,
+				5846B7B849DCD44BA0DBCA1A /* DMPatch.h in Headers */,
+				84EE0AC58C813623835BB19C /* DiffMatchPatch.h in Headers */,
+				1464EDCE726FC484A19A1284 /* DiffMatchPatchCFUtilities.h in Headers */,
+				295B0D7D2EAE8C044BFBE4A9 /* DiffMatchPatchInternals.h in Headers */,
+				6085EB6FA3F2E105E8400D58 /* NSString+EscapeHTMLCharacters.h in Headers */,
+				E236176D6C461BC5516F267D /* NSString+UriCompatibility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		21455C07D0218D8C7A7A48C4 /* Pods-Pairbutton */ = {
+		1B6B07D0397EC725E9306975 /* Pods-Pairbutton-DiffMatchPatch-ObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F9A252D2E641946484995DC /* Build configuration list for PBXNativeTarget "Pods-Pairbutton" */;
+			buildConfigurationList = CC67D593D5955792AAD136BB /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-DiffMatchPatch-ObjC" */;
 			buildPhases = (
-				55C4997E7B38EFAD1AEC8F4C /* Sources */,
-				4A9D68B6D66C0A968B052E9D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				703C250CD57CB492D014A921 /* PBXTargetDependency */,
-			);
-			name = "Pods-Pairbutton";
-			productName = "Pods-Pairbutton";
-			productReference = E048FDD3E2C4FB53EAEBA0FB /* libPods-Pairbutton.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C18CAF2F1C3E2E5640E4FD99 /* Pods-Pairbutton-DiffMatchPatch-ObjC */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1A71140468FC72CB22923AAF /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-DiffMatchPatch-ObjC" */;
-			buildPhases = (
-				2474B664F7D3D11505ABCEF2 /* Sources */,
-				21D53C105961D9C4A32B0990 /* Frameworks */,
-				37C986F4D669F1B8C2E9481C /* Headers */,
+				19491FE9E4E0670B3BC479DB /* Sources */,
+				3AB10473C941FA97338F68D5 /* Frameworks */,
+				5710EDD89E6A0DE88993FEFE /* Headers */,
 			);
 			buildRules = (
 			);
@@ -238,72 +391,130 @@
 			);
 			name = "Pods-Pairbutton-DiffMatchPatch-ObjC";
 			productName = "Pods-Pairbutton-DiffMatchPatch-ObjC";
-			productReference = 6FE29D02828473FB0D8B48C8 /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */;
+			productReference = 8A35335BA161F028104607EA /* libPods-Pairbutton-DiffMatchPatch-ObjC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2898B7C1AC5B07102C14970E /* Pods-Pairbutton-AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF580D8F497C3A723A572681 /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-AFNetworking" */;
+			buildPhases = (
+				B138D3CC3DBA4E8699B54777 /* Sources */,
+				B28B96EAD6C0B7FB0A0076C8 /* Frameworks */,
+				198D92C03612C84CA7677FBC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Pairbutton-AFNetworking";
+			productName = "Pods-Pairbutton-AFNetworking";
+			productReference = 3176C2B4479F256148BD2132 /* libPods-Pairbutton-AFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FBC3B2BF4AEAADDF526B9B61 /* Pods-Pairbutton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05A8A7DA29F99DE19CDEBBC6 /* Build configuration list for PBXNativeTarget "Pods-Pairbutton" */;
+			buildPhases = (
+				970865237E52A932BCD6CF91 /* Sources */,
+				4F78FA5D6377D9B9768E8FD6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A4E6181419F7A759569B89 /* PBXTargetDependency */,
+				642CBBFDC4C70C886F63056C /* PBXTargetDependency */,
+			);
+			name = "Pods-Pairbutton";
+			productName = "Pods-Pairbutton";
+			productReference = 9B8014C6EC902810571850EC /* libPods-Pairbutton.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9C91D661C60DAA86A0124BAF /* Project object */ = {
+		AA601075BA6AA8D1A086F7A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 18F11D12585FC200696E2A27 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 9EAD79A835D82B6B19490434 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5830B1CD9F8F9348F08B443E;
-			productRefGroup = 50F02640EA15751177A5C740 /* Products */;
+			mainGroup = 16439C4B9DB8B6D996B5FA3A;
+			productRefGroup = 1A9349085E87E292B791ADBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21455C07D0218D8C7A7A48C4 /* Pods-Pairbutton */,
-				C18CAF2F1C3E2E5640E4FD99 /* Pods-Pairbutton-DiffMatchPatch-ObjC */,
+				FBC3B2BF4AEAADDF526B9B61 /* Pods-Pairbutton */,
+				2898B7C1AC5B07102C14970E /* Pods-Pairbutton-AFNetworking */,
+				1B6B07D0397EC725E9306975 /* Pods-Pairbutton-DiffMatchPatch-ObjC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2474B664F7D3D11505ABCEF2 /* Sources */ = {
+		19491FE9E4E0670B3BC479DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76863EFED2E3057BBA9A28FD /* DMDiff.m in Sources */,
-				8A6F2110A335FE1B449EB55A /* DMPatch.m in Sources */,
-				62AD26251BA6D98972DAB56C /* DiffMatchPatch.m in Sources */,
-				902E05325192E5069A1926C5 /* DiffMatchPatchCFUtilities.m in Sources */,
-				13070E935D0450E89F1C159C /* NSString+EscapeHTMLCharacters.m in Sources */,
-				1E29DFD2BEA9179BF156AA71 /* NSString+UriCompatibility.m in Sources */,
-				B5502AF10754DB31737CE0CB /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m in Sources */,
+				1D0725906411C2170E5EC180 /* DMDiff.m in Sources */,
+				727EEB260B9C2D089B0D0CC5 /* DMPatch.m in Sources */,
+				9CF9B539CB1E9CC41E9DC014 /* DiffMatchPatch.m in Sources */,
+				32F534138D0A71431F1E2DE4 /* DiffMatchPatchCFUtilities.m in Sources */,
+				09DB348589B9C32ACC955028 /* NSString+EscapeHTMLCharacters.m in Sources */,
+				8612ED936C8205F661AEF8C8 /* NSString+UriCompatibility.m in Sources */,
+				7EF4434B866307474A9529D2 /* Pods-Pairbutton-DiffMatchPatch-ObjC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55C4997E7B38EFAD1AEC8F4C /* Sources */ = {
+		970865237E52A932BCD6CF91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5381B7318D4F2207217D1F0B /* Pods-Pairbutton-dummy.m in Sources */,
+				22A1620FD7FF2092791EC921 /* Pods-Pairbutton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B138D3CC3DBA4E8699B54777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B980B3CB1FB17F1EA0142B9 /* AFHTTPRequestOperation.m in Sources */,
+				0F003257C26C3647116611CC /* AFHTTPRequestOperationManager.m in Sources */,
+				0E3F2C352B75A39011D08DB9 /* AFHTTPSessionManager.m in Sources */,
+				EF40532706363A6C917D61A9 /* AFNetworkReachabilityManager.m in Sources */,
+				D069E33A7AC00E828E771271 /* AFSecurityPolicy.m in Sources */,
+				1A0FD1F4A960BA023853A79A /* AFURLConnectionOperation.m in Sources */,
+				3DFDC2D2E143A8FE6E04B6B0 /* AFURLRequestSerialization.m in Sources */,
+				BFC7CDF9D879A5F57BEFD681 /* AFURLResponseSerialization.m in Sources */,
+				3A141BB3ED96C6B119022F77 /* AFURLSessionManager.m in Sources */,
+				85AD7798B1E42F80251A4BF4 /* Pods-Pairbutton-AFNetworking-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		703C250CD57CB492D014A921 /* PBXTargetDependency */ = {
+		642CBBFDC4C70C886F63056C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C18CAF2F1C3E2E5640E4FD99 /* Pods-Pairbutton-DiffMatchPatch-ObjC */;
-			targetProxy = C700A4411EC21C0C995FA202 /* PBXContainerItemProxy */;
+			target = 1B6B07D0397EC725E9306975 /* Pods-Pairbutton-DiffMatchPatch-ObjC */;
+			targetProxy = 96369C8E1F4AA1CFD63A9F03 /* PBXContainerItemProxy */;
+		};
+		F8A4E6181419F7A759569B89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2898B7C1AC5B07102C14970E /* Pods-Pairbutton-AFNetworking */;
+			targetProxy = B126F574970C4DE28D485B21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		493550D905881E172F8C044B /* Release */ = {
+		13B5596EB76AD61F1554972A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A6A3A7F1B0FA9F1FDE7E124 /* Pods-Pairbutton.release.xcconfig */;
+			baseConfigurationReference = AAC1F055E8100CF93C044DB1 /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -312,9 +523,10 @@
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC/Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
@@ -331,66 +543,9 @@
 			};
 			name = Release;
 		};
-		76205D661BC13BB3AB7CA4F2 /* Debug */ = {
+		3DC0DBA05F826A709D99F088 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC/Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		77456359FF5A44E25EB5E123 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB82531AB98E22C680B1A527 /* Pods-Pairbutton.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		7958BC14EB3BD7A921C9D2D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBD0EE36FBFD696B04BE02FA /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */;
+			baseConfigurationReference = 011385D8C7824B1A4A20CE5E /* Pods-Pairbutton-AFNetworking-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -399,10 +554,10 @@
 				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC/Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-AFNetworking/Pods-Pairbutton-AFNetworking-prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = (
 					"-DNS_BLOCK_ASSERTIONS=1",
 					"$(inherited)",
@@ -419,7 +574,7 @@
 			};
 			name = Release;
 		};
-		D12F099228E71D384661CD9A /* Debug */ = {
+		5D1AA891183CDB4AF643E63D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -449,13 +604,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
-		F02915BD879E36670FA70A86 /* Release */ = {
+		8148B25036453E88F54ADE2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -480,43 +635,168 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				STRIP_INSTALLED_PRODUCT = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
+		87BBBD84ECDB7DD2539D492A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC1F055E8100CF93C044DB1 /* Pods-Pairbutton-DiffMatchPatch-ObjC-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-DiffMatchPatch-ObjC/Pods-Pairbutton-DiffMatchPatch-ObjC-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7D6C0D5D906C5C2603F1CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 011385D8C7824B1A4A20CE5E /* Pods-Pairbutton-AFNetworking-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Pairbutton-AFNetworking/Pods-Pairbutton-AFNetworking-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C0D9E0AC00956A30EFDEC8B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BED08CA8BEC8B1737C65D163 /* Pods-Pairbutton.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EC497137995DA49F39C7DE0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C8FC10A9F8DBFDBF7A4CAA /* Pods-Pairbutton.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F9A252D2E641946484995DC /* Build configuration list for PBXNativeTarget "Pods-Pairbutton" */ = {
+		05A8A7DA29F99DE19CDEBBC6 /* Build configuration list for PBXNativeTarget "Pods-Pairbutton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77456359FF5A44E25EB5E123 /* Debug */,
-				493550D905881E172F8C044B /* Release */,
+				EC497137995DA49F39C7DE0F /* Debug */,
+				C0D9E0AC00956A30EFDEC8B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18F11D12585FC200696E2A27 /* Build configuration list for PBXProject "Pods" */ = {
+		9EAD79A835D82B6B19490434 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D12F099228E71D384661CD9A /* Debug */,
-				F02915BD879E36670FA70A86 /* Release */,
+				5D1AA891183CDB4AF643E63D /* Debug */,
+				8148B25036453E88F54ADE2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A71140468FC72CB22923AAF /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-DiffMatchPatch-ObjC" */ = {
+		CC67D593D5955792AAD136BB /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-DiffMatchPatch-ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76205D661BC13BB3AB7CA4F2 /* Debug */,
-				7958BC14EB3BD7A921C9D2D0 /* Release */,
+				87BBBD84ECDB7DD2539D492A /* Debug */,
+				13B5596EB76AD61F1554972A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF580D8F497C3A723A572681 /* Build configuration list for PBXNativeTarget "Pods-Pairbutton-AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D6C0D5D906C5C2603F1CC5 /* Debug */,
+				3DC0DBA05F826A709D99F088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9C91D661C60DAA86A0124BAF /* Project object */;
+	rootObject = AA601075BA6AA8D1A086F7A9 /* Project object */;
 }
