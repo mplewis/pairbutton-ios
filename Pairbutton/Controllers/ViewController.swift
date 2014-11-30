@@ -14,6 +14,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     @IBOutlet weak var tableView: NSTableView!
     @IBOutlet weak var statusLabel: NSTextField!
+    @IBOutlet weak var shareLinkLabel: NSTextField!
     @IBOutlet weak var watchedFileList: NSScrollView!
     @IBOutlet weak var removeFileButton: NSButton!
     
