@@ -5,7 +5,9 @@
 #ifndef BRIDGING_HEADER
 #define BRIDGING_HEADER
 
-#include "VDKQueue.h"
-#include "DiffMatchPatch.h"
+#import <CommonCrypto/CommonCrypto.h>
+#import "AFNetworking.h"
+#import "VDKQueue.h"
+#import "DiffMatchPatch.h"
 
 #endif

@@ -11,6 +11,7 @@
 		363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363C4AE81A1382EA005D2DAB /* ViewController.swift */; };
 		363C4AEB1A1382EA005D2DAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEA1A1382EA005D2DAB /* Images.xcassets */; };
 		363C4AEE1A1382EA005D2DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363C4AEC1A1382EA005D2DAB /* Main.storyboard */; };
+		3677E5551A2B0F5600B7771F /* StringMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3677E5541A2B0F5600B7771F /* StringMD5.swift */; };
 		36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DFD17F1A14840C00B8C40C /* WatchedFile.swift */; };
 		36F6B3041A23B9F500E391F5 /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F6B3031A23B9F500E391F5 /* VDKQueue.m */; };
 		D5F7389ED58D1F19E1122BC8 /* libPods-Pairbutton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B2263081F81E61041960341 /* libPods-Pairbutton.a */; };
@@ -36,6 +37,7 @@
 		363C4AE81A1382EA005D2DAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		363C4AEA1A1382EA005D2DAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		363C4AED1A1382EA005D2DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3677E5541A2B0F5600B7771F /* StringMD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringMD5.swift; path = Helpers/StringMD5.swift; sourceTree = "<group>"; };
 		36C159EA1A15E95D00A8BA60 /* Pairbutton-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pairbutton-Bridging-Header.h"; sourceTree = "<group>"; };
 		36DFD17F1A14840C00B8C40C /* WatchedFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchedFile.swift; sourceTree = "<group>"; };
 		36F6B3021A23B9F500E391F5 /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDKQueue.h; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		363C4AE31A1382EA005D2DAB /* Pairbutton */ = {
 			isa = PBXGroup;
 			children = (
+				3677E5531A2B0F4800B7771F /* Helpers */,
 				36F6B30A1A23C20A00E391F5 /* App Delegate */,
 				36F6B30D1A23C21700E391F5 /* Models */,
 				36F6B30B1A23C21200E391F5 /* Views */,
@@ -104,6 +107,14 @@
 				36F6B3051A23BBEE00E391F5 /* VDKQueue */,
 			);
 			path = Vendor;
+			sourceTree = "<group>";
+		};
+		3677E5531A2B0F4800B7771F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3677E5541A2B0F5600B7771F /* StringMD5.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		36F6B3051A23BBEE00E391F5 /* VDKQueue */ = {
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3677E5551A2B0F5600B7771F /* StringMD5.swift in Sources */,
 				36DFD1801A14840C00B8C40C /* WatchedFile.swift in Sources */,
 				363C4AE91A1382EA005D2DAB /* ViewController.swift in Sources */,
 				363C4AE71A1382EA005D2DAB /* AppDelegate.swift in Sources */,
