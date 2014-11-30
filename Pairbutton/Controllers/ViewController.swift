@@ -53,6 +53,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let appDelegate = NSApplication.sharedApplication().delegate as AppDelegate
+        appDelegate.mainVC = self
         manager.requestSerializer = serializer
         manager.POST("/channel", parameters: nil, success: { _, resp in
             if let r = resp as? NSDictionary {
@@ -70,6 +72,22 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         }, failure: { _, err in
             println(err)
         })
+    }
+    
+    func appExiting() {
+        if let channelId = self.channelId {
+            println("Deleting channel \(channelId)")
+            let sem = dispatch_semaphore_create(0)
+            self.manager.DELETE("/channel/\(channelId)", parameters: nil, success: { (_, resp) -> Void in
+                println(resp)
+                dispatch_semaphore_signal(sem)
+            }, failure: { (_, err) -> Void in
+                println(err)
+                dispatch_semaphore_signal(sem)
+            })
+            // Wait for delete for 1 second
+            dispatch_semaphore_wait(sem, dispatch_time(DISPATCH_TIME_NOW, 1 * 1000000000))
+        }
     }
     
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
