@@ -13,10 +13,10 @@ class WatchedFile: NSObject, VDKQueueDelegate {
     var fileUrl: NSURL
     var lastContents: NSString
     var onFirstRead: ((initialData: String) -> ())?
-    var onDelta: ((delta: String) -> ())?
+    var onDelta: ((delta: String, expectedHash: String) -> ())?
     var vq: VDKQueue
 
-    init(fileUrl: NSURL, onFirstRead: ((initialData: String) -> ())?, onDelta: ((delta: String) -> ())? ) {
+    init(fileUrl: NSURL, onFirstRead: ((initialData: String) -> ())?, onDelta: ((delta: String, expectedHash: String) -> ())? ) {
         self.fileUrl = fileUrl
         var error: NSError?
         self.lastContents = String(contentsOfURL: fileUrl, encoding: NSUTF8StringEncoding, error: &error)!
@@ -44,7 +44,7 @@ class WatchedFile: NSObject, VDKQueueDelegate {
                 }
                 let patches = patch_patchesFromTexts(self.lastContents, newContents)
                 let patchesString = patch_patchesToText(patches)
-                self.onDelta?(delta: patchesString)
+                self.onDelta?(delta: patchesString, expectedHash: newContents.md5)
                 self.lastContents = newContents
             } else {
                 println(error)
